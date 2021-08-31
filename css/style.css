@@ -2508,6 +2508,7 @@ a.icon_nav_move:hover img {
     width: 100%;
     display: block;
     text-align: center;
+    transition: 400ms ease-in-out 0s;
 }
 
 #boxlogin #forget:hover {
