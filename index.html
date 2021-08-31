@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt" class='loginpage'>
+
+<head>
+    <title>Abra seu Chamado</title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" type="images/x-icon" href="/glpi/pics/favicon.ico" />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="css/style2.css" media="screen">
+    <!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="/glpi/css/styles_ie.min.css?v=9.2.3" media="screen"><![endif]-->
+</head>
+
+<body>
+    <div id='firstboxlogin'>
+
+        <div id='logo_login'></div>
+        <div id='text-login'></div>
+        <div id='boxlogin'>
+            <form action='/glpi/front/login.php' method='post'>
+                <p class="login_input">
+                    <input type="text" name="fielda612e4326abe83" id="login_name" required="required" placeholder="Usuário" autofocus="autofocus" />
+                    <span class="login_img"></span>
+                </p>
+                <p class="login_input">
+                    <input type="password" name="fieldb612e4326abec5" id="login_password" required="required" placeholder="Senha" />
+                    <span class="login_img"></span>
+                </p>
+                <p class="login_input">
+                    <label for="login_remember">
+                   <input type="checkbox" name="fieldc612e4326abf02" id="login_remember"
+                   checked="checked" />
+            Lembrar me</label>
+                </p>
+                <p class="login_input">
+                    <input type="submit" name="submit" value="ENVIAR" class="submit" />
+                </p><a id="forget" href="front/lostpassword.php?lostpassword=1">Esqueceu sua senha?</a>
+                <input type="hidden" name="_glpi_csrf_token" value="1eff3f0917a682f1ed8d441267558ff1" />
+            </form>
+            <script type='text/javascript'>
+                document.getElementById('login_name').focus();
+            </script>
+        </div>
+        <div class='error'><noscript><p>Você deve ativar a função JavaScript do seu navegador</p></noscript></div>
+        <div id='display-login'></div>
+    </div>
+    <div id='footer-login' class='home'><a href="http://glpi-project.org/" title="Powered by Teclib and contributors" class="copyright">GLPI Copyright (C) 2015-2018 Teclib' and contributors - Copyright (C) 2003-2015 INDEPNET Development Team</a></div>
+    <div style="background-image: url('/glpi/front/cron.php');"></div>
+</body>
+
+</html>
